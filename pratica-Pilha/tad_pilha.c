@@ -62,3 +62,14 @@ int Pilha_Tamanho(Pilha *pPilha) {
     return tam;
 }
 //
+void Pilha_Imprime(Pilha *pPilha)
+{
+    if (!Pilha_EhVazia(pPilha)){
+        PilhaNo * aux = pPilha->primeiro;
+        while (aux != NULL){
+            printf("%d ", aux->info);
+            aux = aux->proximo;
+        }
+        printf("\n");
+    }
+}

@@ -38,15 +38,6 @@ int main() {
         free(lista);
     } else if (decision == 2) { //pilha
         Lista *pilha = Pilha_Inicia();
-        Pilha_Push(pilha, 1);
-        Pilha_Push(pilha, 2);
-        Pilha_Push(pilha, 4);
-        Pilha_Push(pilha, 8);
-        Pilha_Push(pilha, 16);
-        Pilha_Push(pilha, 32);
-        int w;
-        Pilha_Pop(pilha, &w);
-
 
         free(pilha);
     } else { //fila

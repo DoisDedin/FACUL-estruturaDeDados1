@@ -28,4 +28,6 @@ int Pilha_Pop(Pilha *pPilha, int *pX);
 /* retorna o tamanho da pilha */
 int Pilha_Tamanho(Pilha *pPilha);
 
+void Pilha_Imprime(Pilha *pPilha);
+
 #endif //FACUL_ESTRUTURADEDADOS1_TAD_PILHA_H

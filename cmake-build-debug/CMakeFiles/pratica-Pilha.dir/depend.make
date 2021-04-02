@@ -3,7 +3,13 @@
 
 CMakeFiles/pratica-Pilha.dir/pratica-Pilha/main.c.obj: ../pratica-Pilha/main.c
 CMakeFiles/pratica-Pilha.dir/pratica-Pilha/main.c.obj: ../pratica-Pilha/tad_lista.h
+CMakeFiles/pratica-Pilha.dir/pratica-Pilha/main.c.obj: ../pratica-Pilha/tad_pilha.h
+
+CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_fila.c.obj: ../pratica-Pilha/tad_fila.c
 
 CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_lista.c.obj: ../pratica-Pilha/tad_lista.c
 CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_lista.c.obj: ../pratica-Pilha/tad_lista.h
+
+CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.obj: ../pratica-Pilha/tad_pilha.c
+CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.obj: ../pratica-Pilha/tad_pilha.h
 
