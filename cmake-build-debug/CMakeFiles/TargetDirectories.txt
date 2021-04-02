@@ -1,0 +1,3 @@
+C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug/CMakeFiles/pratica-Pilha.dir
+C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
