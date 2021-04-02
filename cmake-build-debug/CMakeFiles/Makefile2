@@ -93,12 +93,12 @@ clean: CMakeFiles/pratica-Pilha.dir/clean
 CMakeFiles/pratica-Pilha.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target pratica-Pilha"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target pratica-Pilha"
 .PHONY : CMakeFiles/pratica-Pilha.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pratica-Pilha.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/pratica-Pilha.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/pratica-Pilha.dir/rule

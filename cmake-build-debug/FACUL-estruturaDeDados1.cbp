@@ -77,6 +77,15 @@
 		<Unit filename="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-Pilha/main.c">
 			<Option target="pratica-Pilha"/>
 		</Unit>
+		<Unit filename="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-Pilha/tad_lista.c">
+			<Option target="pratica-Pilha"/>
+		</Unit>
+		<Unit filename="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-Pilha/tad_lista.h">
+			<Option target="pratica-Pilha"/>
+		</Unit>
+		<Unit filename="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-Pilha/tad_pilha.h">
+			<Option target="pratica-Pilha"/>
+		</Unit>
 		<Unit filename="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

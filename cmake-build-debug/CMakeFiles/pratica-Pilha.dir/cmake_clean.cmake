@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pratica-Pilha.dir/pratica-Pilha/main.c.obj"
+  "CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_lista.c.obj"
   "libpratica-Pilha.dll.a"
   "pratica-Pilha.exe"
   "pratica-Pilha.exe.manifest"

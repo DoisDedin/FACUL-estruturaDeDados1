@@ -169,6 +169,33 @@ pratica-Pilha/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/pratica-Pilha/main.c.s
 .PHONY : pratica-Pilha/main.c.s
 
+pratica-Pilha/tad_lista.obj: pratica-Pilha/tad_lista.c.obj
+
+.PHONY : pratica-Pilha/tad_lista.obj
+
+# target to build an object file
+pratica-Pilha/tad_lista.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_lista.c.obj
+.PHONY : pratica-Pilha/tad_lista.c.obj
+
+pratica-Pilha/tad_lista.i: pratica-Pilha/tad_lista.c.i
+
+.PHONY : pratica-Pilha/tad_lista.i
+
+# target to preprocess a source file
+pratica-Pilha/tad_lista.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_lista.c.i
+.PHONY : pratica-Pilha/tad_lista.c.i
+
+pratica-Pilha/tad_lista.s: pratica-Pilha/tad_lista.c.s
+
+.PHONY : pratica-Pilha/tad_lista.s
+
+# target to generate assembly for a file
+pratica-Pilha/tad_lista.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_lista.c.s
+.PHONY : pratica-Pilha/tad_lista.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -181,6 +208,9 @@ help:
 	@echo ... pratica-Pilha/main.obj
 	@echo ... pratica-Pilha/main.i
 	@echo ... pratica-Pilha/main.s
+	@echo ... pratica-Pilha/tad_lista.obj
+	@echo ... pratica-Pilha/tad_lista.i
+	@echo ... pratica-Pilha/tad_lista.s
 .PHONY : help
 
 
