@@ -102,21 +102,51 @@ CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_lista.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_lista.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\pratica-Pilha\tad_lista.c -o CMakeFiles\pratica-Pilha.dir\pratica-Pilha\tad_lista.c.s
 
+CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.obj: CMakeFiles/pratica-Pilha.dir/flags.make
+CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.obj: ../pratica-Pilha/tad_pilha.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\pratica-Pilha.dir\pratica-Pilha\tad_pilha.c.obj   -c C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\pratica-Pilha\tad_pilha.c
+
+CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\pratica-Pilha\tad_pilha.c > CMakeFiles\pratica-Pilha.dir\pratica-Pilha\tad_pilha.c.i
+
+CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\pratica-Pilha\tad_pilha.c -o CMakeFiles\pratica-Pilha.dir\pratica-Pilha\tad_pilha.c.s
+
+CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_fila.c.obj: CMakeFiles/pratica-Pilha.dir/flags.make
+CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_fila.c.obj: ../pratica-Pilha/tad_fila.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_fila.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\pratica-Pilha.dir\pratica-Pilha\tad_fila.c.obj   -c C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\pratica-Pilha\tad_fila.c
+
+CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_fila.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_fila.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\pratica-Pilha\tad_fila.c > CMakeFiles\pratica-Pilha.dir\pratica-Pilha\tad_fila.c.i
+
+CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_fila.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_fila.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\pratica-Pilha\tad_fila.c -o CMakeFiles\pratica-Pilha.dir\pratica-Pilha\tad_fila.c.s
+
 # Object files for target pratica-Pilha
 pratica__Pilha_OBJECTS = \
 "CMakeFiles/pratica-Pilha.dir/pratica-Pilha/main.c.obj" \
-"CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_lista.c.obj"
+"CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_lista.c.obj" \
+"CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.obj" \
+"CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_fila.c.obj"
 
 # External object files for target pratica-Pilha
 pratica__Pilha_EXTERNAL_OBJECTS =
 
 pratica-Pilha.exe: CMakeFiles/pratica-Pilha.dir/pratica-Pilha/main.c.obj
 pratica-Pilha.exe: CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_lista.c.obj
+pratica-Pilha.exe: CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.obj
+pratica-Pilha.exe: CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_fila.c.obj
 pratica-Pilha.exe: CMakeFiles/pratica-Pilha.dir/build.make
 pratica-Pilha.exe: CMakeFiles/pratica-Pilha.dir/linklibs.rsp
 pratica-Pilha.exe: CMakeFiles/pratica-Pilha.dir/objects1.rsp
 pratica-Pilha.exe: CMakeFiles/pratica-Pilha.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable pratica-Pilha.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\joaov\CLionProjects\FACUL-estruturaDeDados1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable pratica-Pilha.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\pratica-Pilha.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

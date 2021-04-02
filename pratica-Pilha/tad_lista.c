@@ -3,16 +3,16 @@
 typedef struct listano ListaNo;
 
 struct lista {
-    ListaNo * primeiro;
+    ListaNo *primeiro;
 };
 struct listano {
     int info;
-    ListaNo * proximo;
+    ListaNo *proximo;
 };
 
 //Inicia uma lista
-Lista * Lista_Inicia() {
-    Lista * pLista = malloc(sizeof(Lista));
+Lista *Lista_Inicia() {
+    Lista *pLista = malloc(sizeof(Lista));
     pLista->primeiro = NULL;
     return pLista;
 }
@@ -28,49 +28,46 @@ int Lista_EhVazia(Lista *pLista) {
 
 // insere um elemento em qualquer lugar que eu querer
 void Lista_Insere(Lista *lista, int p, int x) {
-    ListaNo *no = malloc(sizeof(ListaNo));
+    ListaNo *newNo = malloc(sizeof(ListaNo));
 
-    no->info = x;
-    if (p == 0) {
-        ListaNo *w =no->proximo;
-        no->proximo = lista->primeiro;
-        lista->primeiro = no;
+    newNo->info = x;
+    newNo->proximo = NULL;
+    if (p == 0 && lista->primeiro == NULL) {
+        lista->primeiro = newNo;
     } else {
-        no->proximo = NULL;
-        ListaNo *no2 = lista->primeiro;
-        for (int i = 0; i < p; i++) {
-            no2 = no2->proximo;
+        ListaNo *aux = lista->primeiro;
+        for (int i = 0; i < p-1; i++) {
+            aux = aux->proximo;
         }
-        if (no2->proximo == NULL) {
-            lista->primeiro = no;
-
-        } else {
-            no2->proximo = no;
-
-        }
+        newNo->proximo = aux->proximo;
+        aux->proximo = newNo;
     }
 }
 
 //remove um item de qualquer posicão da lista
-int Lista_Remove(Lista *lista, int p, int *x) {
+int Lista_Remove(Lista *pLista, int p, int *pX) {
+    ListaNo *celula;
     if (p == 0) {
-        *x = lista->primeiro->info;
-        ListaNo *celula = lista->primeiro;
-        lista->primeiro = celula->proximo;
-
+        celula = pLista->primeiro;
+        *pX = celula->info;
+        pLista->primeiro = celula->proximo;
         free(celula);
+
         return 1;
     } else {
-        if (Lista_Tamanho(lista) > 0) {
-            ListaNo *aux = lista->primeiro;
-            *x = aux->info;
-            lista->primeiro = aux->proximo;
-            free(aux);
-            return 1;
+        celula = pLista->primeiro;
+        for (int i = 0; i < p - 1; i++) {
+            celula = celula->proximo;
+            if (celula->proximo == NULL)
+                return 0;
         }
+        *pX = celula->proximo->info;
+        ListaNo *aux = celula->proximo;
+        celula->proximo = celula->proximo->proximo;
+        free(aux);
 
+        return 1;
     }
-    return 0;
 }
 
 // retorna o tamanho da lista
@@ -84,3 +81,14 @@ int Lista_Tamanho(Lista *pLista) {
     return tam;
 }
 //
+void Lista_Imprime(Lista *pLista)
+{
+    if (!Lista_EhVazia(pLista)){
+        ListaNo* aux = pLista->primeiro;
+        while (aux != NULL){
+            printf("%d ", aux->info);
+            aux = aux->proximo;
+        }
+        printf("\n");
+    }
+}

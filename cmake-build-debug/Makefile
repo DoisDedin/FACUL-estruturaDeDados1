@@ -169,6 +169,33 @@ pratica-Pilha/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/pratica-Pilha/main.c.s
 .PHONY : pratica-Pilha/main.c.s
 
+pratica-Pilha/tad_fila.obj: pratica-Pilha/tad_fila.c.obj
+
+.PHONY : pratica-Pilha/tad_fila.obj
+
+# target to build an object file
+pratica-Pilha/tad_fila.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_fila.c.obj
+.PHONY : pratica-Pilha/tad_fila.c.obj
+
+pratica-Pilha/tad_fila.i: pratica-Pilha/tad_fila.c.i
+
+.PHONY : pratica-Pilha/tad_fila.i
+
+# target to preprocess a source file
+pratica-Pilha/tad_fila.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_fila.c.i
+.PHONY : pratica-Pilha/tad_fila.c.i
+
+pratica-Pilha/tad_fila.s: pratica-Pilha/tad_fila.c.s
+
+.PHONY : pratica-Pilha/tad_fila.s
+
+# target to generate assembly for a file
+pratica-Pilha/tad_fila.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_fila.c.s
+.PHONY : pratica-Pilha/tad_fila.c.s
+
 pratica-Pilha/tad_lista.obj: pratica-Pilha/tad_lista.c.obj
 
 .PHONY : pratica-Pilha/tad_lista.obj
@@ -196,6 +223,33 @@ pratica-Pilha/tad_lista.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_lista.c.s
 .PHONY : pratica-Pilha/tad_lista.c.s
 
+pratica-Pilha/tad_pilha.obj: pratica-Pilha/tad_pilha.c.obj
+
+.PHONY : pratica-Pilha/tad_pilha.obj
+
+# target to build an object file
+pratica-Pilha/tad_pilha.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.obj
+.PHONY : pratica-Pilha/tad_pilha.c.obj
+
+pratica-Pilha/tad_pilha.i: pratica-Pilha/tad_pilha.c.i
+
+.PHONY : pratica-Pilha/tad_pilha.i
+
+# target to preprocess a source file
+pratica-Pilha/tad_pilha.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.i
+.PHONY : pratica-Pilha/tad_pilha.c.i
+
+pratica-Pilha/tad_pilha.s: pratica-Pilha/tad_pilha.c.s
+
+.PHONY : pratica-Pilha/tad_pilha.s
+
+# target to generate assembly for a file
+pratica-Pilha/tad_pilha.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.s
+.PHONY : pratica-Pilha/tad_pilha.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -208,9 +262,15 @@ help:
 	@echo ... pratica-Pilha/main.obj
 	@echo ... pratica-Pilha/main.i
 	@echo ... pratica-Pilha/main.s
+	@echo ... pratica-Pilha/tad_fila.obj
+	@echo ... pratica-Pilha/tad_fila.i
+	@echo ... pratica-Pilha/tad_fila.s
 	@echo ... pratica-Pilha/tad_lista.obj
 	@echo ... pratica-Pilha/tad_lista.i
 	@echo ... pratica-Pilha/tad_lista.s
+	@echo ... pratica-Pilha/tad_pilha.obj
+	@echo ... pratica-Pilha/tad_pilha.i
+	@echo ... pratica-Pilha/tad_pilha.s
 .PHONY : help
 
 
