@@ -6,23 +6,21 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-Pilha/main.c
+C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-Pilha/tad_fila.c
+tad_lista.h
+C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-Pilha/tad_lista.h
+tad_fila.h
+C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-Pilha/tad_fila.h
+
+C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-Pilha/tad_fila.h
 stdio.h
 -
 stdlib.h
 -
 tad_lista.h
 C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-Pilha/tad_lista.h
-tad_pilha.h
-C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-Pilha/tad_pilha.h
 
 C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-Pilha/tad_lista.h
-stdio.h
--
-stdlib.h
--
-
-C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-Pilha/tad_pilha.h
 stdio.h
 -
 stdlib.h

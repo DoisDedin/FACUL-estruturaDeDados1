@@ -22,4 +22,5 @@ int Lista_Remove(Lista *pLista, int p, int *pX);
 int Lista_Tamanho(Lista *pLista);
 
 void Lista_Imprime(Lista *pLista);
+
 #endif /* tad_list_h */
