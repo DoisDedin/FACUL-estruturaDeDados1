@@ -12,6 +12,7 @@ struct lista {
 struct listano {
     int info;
     ListaNo *proximo;
+
 };
 
 //Inicia uma lista
@@ -48,3 +49,4 @@ int Fila_Tamanho(Lista *pLista) {
 void Fila_Imprime(Lista *pLista){
     Lista_Imprime(pLista);
 }
+
