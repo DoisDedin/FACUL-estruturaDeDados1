@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-insertion-mergesort/listaAluno.h
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-insertion-mergesort/main.c
+listaAluno.h
+C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-insertion-mergesort/listaAluno.h
+

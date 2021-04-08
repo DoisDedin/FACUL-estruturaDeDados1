@@ -49,4 +49,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/pratica-Pilha.dir/DependInfo.cmake"
+  "CMakeFiles/pratica-insertion-mergesort.dir/DependInfo.cmake"
   )

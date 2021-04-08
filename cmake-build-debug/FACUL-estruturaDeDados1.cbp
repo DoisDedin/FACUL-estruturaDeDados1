@@ -63,6 +63,42 @@
 					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="pratica-insertion-mergesort">
+				<Option output="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug/pratica-insertion-mergesort.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug/Makefile&quot;  VERBOSE=1 pratica-insertion-mergesort"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="pratica-insertion-mergesort/fast">
+				<Option output="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug/pratica-insertion-mergesort.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/9.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug/Makefile&quot;  VERBOSE=1 pratica-insertion-mergesort/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/cmake-build-debug"/>
 				<Option type="4"/>
@@ -94,6 +130,15 @@
 		</Unit>
 		<Unit filename="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-Pilha/tad_pilha.h">
 			<Option target="pratica-Pilha"/>
+		</Unit>
+		<Unit filename="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-insertion-mergesort/listaAluno.c">
+			<Option target="pratica-insertion-mergesort"/>
+		</Unit>
+		<Unit filename="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-insertion-mergesort/listaAluno.h">
+			<Option target="pratica-insertion-mergesort"/>
+		</Unit>
+		<Unit filename="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/pratica-insertion-mergesort/main.c">
+			<Option target="pratica-insertion-mergesort"/>
 		</Unit>
 		<Unit filename="C:/Users/joaov/CLionProjects/FACUL-estruturaDeDados1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

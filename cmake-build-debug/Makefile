@@ -142,6 +142,19 @@ pratica-Pilha/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/build
 .PHONY : pratica-Pilha/fast
 
+#=============================================================================
+# Target rules for targets named pratica-insertion-mergesort
+
+# Build rule for target.
+pratica-insertion-mergesort: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 pratica-insertion-mergesort
+.PHONY : pratica-insertion-mergesort
+
+# fast build rule for target.
+pratica-insertion-mergesort/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-insertion-mergesort.dir\build.make CMakeFiles/pratica-insertion-mergesort.dir/build
+.PHONY : pratica-insertion-mergesort/fast
+
 pratica-Pilha/main.obj: pratica-Pilha/main.c.obj
 
 .PHONY : pratica-Pilha/main.obj
@@ -250,6 +263,60 @@ pratica-Pilha/tad_pilha.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-Pilha.dir\build.make CMakeFiles/pratica-Pilha.dir/pratica-Pilha/tad_pilha.c.s
 .PHONY : pratica-Pilha/tad_pilha.c.s
 
+pratica-insertion-mergesort/listaAluno.obj: pratica-insertion-mergesort/listaAluno.c.obj
+
+.PHONY : pratica-insertion-mergesort/listaAluno.obj
+
+# target to build an object file
+pratica-insertion-mergesort/listaAluno.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-insertion-mergesort.dir\build.make CMakeFiles/pratica-insertion-mergesort.dir/pratica-insertion-mergesort/listaAluno.c.obj
+.PHONY : pratica-insertion-mergesort/listaAluno.c.obj
+
+pratica-insertion-mergesort/listaAluno.i: pratica-insertion-mergesort/listaAluno.c.i
+
+.PHONY : pratica-insertion-mergesort/listaAluno.i
+
+# target to preprocess a source file
+pratica-insertion-mergesort/listaAluno.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-insertion-mergesort.dir\build.make CMakeFiles/pratica-insertion-mergesort.dir/pratica-insertion-mergesort/listaAluno.c.i
+.PHONY : pratica-insertion-mergesort/listaAluno.c.i
+
+pratica-insertion-mergesort/listaAluno.s: pratica-insertion-mergesort/listaAluno.c.s
+
+.PHONY : pratica-insertion-mergesort/listaAluno.s
+
+# target to generate assembly for a file
+pratica-insertion-mergesort/listaAluno.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-insertion-mergesort.dir\build.make CMakeFiles/pratica-insertion-mergesort.dir/pratica-insertion-mergesort/listaAluno.c.s
+.PHONY : pratica-insertion-mergesort/listaAluno.c.s
+
+pratica-insertion-mergesort/main.obj: pratica-insertion-mergesort/main.c.obj
+
+.PHONY : pratica-insertion-mergesort/main.obj
+
+# target to build an object file
+pratica-insertion-mergesort/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-insertion-mergesort.dir\build.make CMakeFiles/pratica-insertion-mergesort.dir/pratica-insertion-mergesort/main.c.obj
+.PHONY : pratica-insertion-mergesort/main.c.obj
+
+pratica-insertion-mergesort/main.i: pratica-insertion-mergesort/main.c.i
+
+.PHONY : pratica-insertion-mergesort/main.i
+
+# target to preprocess a source file
+pratica-insertion-mergesort/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-insertion-mergesort.dir\build.make CMakeFiles/pratica-insertion-mergesort.dir/pratica-insertion-mergesort/main.c.i
+.PHONY : pratica-insertion-mergesort/main.c.i
+
+pratica-insertion-mergesort/main.s: pratica-insertion-mergesort/main.c.s
+
+.PHONY : pratica-insertion-mergesort/main.s
+
+# target to generate assembly for a file
+pratica-insertion-mergesort/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pratica-insertion-mergesort.dir\build.make CMakeFiles/pratica-insertion-mergesort.dir/pratica-insertion-mergesort/main.c.s
+.PHONY : pratica-insertion-mergesort/main.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -259,6 +326,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... pratica-Pilha
+	@echo ... pratica-insertion-mergesort
 	@echo ... pratica-Pilha/main.obj
 	@echo ... pratica-Pilha/main.i
 	@echo ... pratica-Pilha/main.s
@@ -271,6 +339,12 @@ help:
 	@echo ... pratica-Pilha/tad_pilha.obj
 	@echo ... pratica-Pilha/tad_pilha.i
 	@echo ... pratica-Pilha/tad_pilha.s
+	@echo ... pratica-insertion-mergesort/listaAluno.obj
+	@echo ... pratica-insertion-mergesort/listaAluno.i
+	@echo ... pratica-insertion-mergesort/listaAluno.s
+	@echo ... pratica-insertion-mergesort/main.obj
+	@echo ... pratica-insertion-mergesort/main.i
+	@echo ... pratica-insertion-mergesort/main.s
 .PHONY : help
 
 
