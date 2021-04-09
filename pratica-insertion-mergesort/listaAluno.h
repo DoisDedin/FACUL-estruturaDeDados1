@@ -10,6 +10,7 @@
 
 typedef struct listaaluno ListaAluno;
 typedef struct listaalunono ListaAlunoNo;
+typedef struct listaluno ListaLuno;
 //respectivas funções
 /* inicia uma lista */
 ListaAluno *listaAluno_Inicia();
@@ -34,6 +35,8 @@ void listaAluno_Imprime(ListaAluno *pListaAluno);
 void listaAluno_Imprime_OnliMatriculaandMedia(ListaAluno *pListaAluno);
 
 void listaAluno_InsertionSort(ListaAluno *pListaAluno);
-void listaAluno_MergeSort(ListaAluno *pListaAluno);
-
+void merge(ListaLuno *aluno, int iVE, int mV, int iVD);
+void mergeSort(ListaLuno *listaLuno, int iVE, int iVD);
+void converte(ListaAluno *listaAluno);
+void callMerge(ListaAluno *listaAluno);
 #endif //FACUL_ESTRUTURADEDADOS1_LISTAALUNO_H

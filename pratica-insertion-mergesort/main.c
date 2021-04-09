@@ -6,12 +6,17 @@
 int main() {
 
     ListaAluno *listaAluno = listaAluno_Inicia();
-    listaAluno_Insere(listaAluno, 0,3,5.0,5.0);
-    listaAluno_Insere(listaAluno, 1,1,0.0,0.0);
-    listaAluno_Insere(listaAluno, 2,11,2.0,2.0);
-    listaAluno_Troca(listaAluno, 0, 1);
-    listaAluno_Troca(listaAluno, 1, 2);
-    listaAluno_Imprime(listaAluno);
+    listaAluno_Insere(listaAluno, 0, 0, 1.0, 1.0);
+    listaAluno_Insere(listaAluno, 1, 1, 0.0, 0.0);
+    listaAluno_Insere(listaAluno, 2, 4, 7.0, 7.0);
+    listaAluno_Insere(listaAluno, 3, 2, 2.0, 2.0);
+    listaAluno_Insere(listaAluno, 4, 3, 5.5, 5.5);
+    listaAluno_Insere(listaAluno, 5, 3, 3.2, 1.5);
+    listaAluno_Insere(listaAluno, 6, 3, 5.5, 7.0);
+    listaAluno_Insere(listaAluno, 7, 3, 0.0, 9.0);
+   callMerge(listaAluno);
+
+    // listaAluno_Imprime(listaAluno);
     //    int decision;
 //    printf("Escolha o metodo de ordenacao \n Insertion : 0 \nMerge : 1 \n");
 //    scanf("%d", &decision);

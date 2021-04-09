@@ -5,16 +5,22 @@
 #include "listaAluno.h"
 
 
-
 struct listaaluno {
     ListaAlunoNo *primeiro;
 };
+
 struct listaalunono {
     int matricula;
     float prova;
     float trabalho;
     float media;
     ListaAlunoNo *proximo;
+};
+struct listaluno {
+    int matricula;
+    float prova;
+    float trabalho;
+    float media;
 };
 
 //Inicia uma ListaAluno
@@ -55,7 +61,8 @@ void listaAluno_Insere(ListaAluno *pListaAluno, int p, int matricula, float x, f
         aux->proximo = newNo;
     }
 }
-ListaAlunoNo * listaAluno_Pega(ListaAluno *pListaAluno, int p){
+
+ListaAlunoNo *listaAluno_Pega(ListaAluno *pListaAluno, int p) {
     ListaAlunoNo *celula;
     if (p == 0) {
         celula = pListaAluno->primeiro;
@@ -71,10 +78,11 @@ ListaAlunoNo * listaAluno_Pega(ListaAluno *pListaAluno, int p){
         return aux;
     }
 }
-void listaAluno_Troca(ListaAluno *pListaAluno,int i , int j){
-    ListaAlunoNo *aux1 = listaAluno_Pega(pListaAluno,i);
-    ListaAlunoNo *aux2 = listaAluno_Pega(pListaAluno,j);
-    ListaAlunoNo *aux3 = malloc(sizeof (ListaAlunoNo));
+
+void listaAluno_Troca(ListaAluno *pListaAluno, int i, int j) {
+    ListaAlunoNo *aux1 = listaAluno_Pega(pListaAluno, i);
+    ListaAlunoNo *aux2 = listaAluno_Pega(pListaAluno, j);
+    ListaAlunoNo *aux3 = malloc(sizeof(ListaAlunoNo));
 
     aux3->matricula = aux1->matricula;
     aux3->prova = aux1->prova;
@@ -92,14 +100,15 @@ void listaAluno_Troca(ListaAluno *pListaAluno,int i , int j){
     aux2->media = aux3->media;
     free(aux3);
 }
-int listaAluno_ComparaMaior(ListaAlunoNo *x, ListaAlunoNo *y){
-    if (x->media > y->media){
+
+int listaAluno_ComparaMaior(ListaAlunoNo *x, ListaAlunoNo *y) {
+    if (x->media > y->media) {
         return 1;
-    }
-    else{
+    } else {
         return 0;
     }
 }
+
 //remove um item de qualquer posicão da ListaA luno
 int listaAluno_Remove(ListaAluno *pListaAluno, int p) {
     ListaAlunoNo *celula;
@@ -146,6 +155,7 @@ void listaAluno_Imprime(ListaAluno *pListaAluno) {
         printf("\n");
     }
 }
+
 void listaAluno_Imprime_OnliMatriculaandMedia(ListaAluno *pListaAluno) {
     if (!listaAluno_EhVazia(pListaAluno)) {
         ListaAlunoNo *aux = pListaAluno->primeiro;
@@ -158,27 +168,98 @@ void listaAluno_Imprime_OnliMatriculaandMedia(ListaAluno *pListaAluno) {
 
 }
 
-void listaAluno_InsertionSort(ListaAluno *pListaAluno){
-    ListaAlunoNo *aux = malloc(sizeof(ListaAlunoNo));
-    ListaAlunoNo *aux2 = malloc(sizeof (ListaAlunoNo));
-    ListaAlunoNo *aux3 = malloc(sizeof (ListaAlunoNo));
-    int position;
-    int size = listaAluno_Tamanho(pListaAluno);
-    for (int i = 1; i < size; i++) {
-        aux->proximo = listaAluno_Pega(pListaAluno, i);
-        position = i - 1;
-        aux2->proximo = listaAluno_Pega(pListaAluno,position);
-        while(position >= 0 && aux->proximo->media > aux2->proximo->media){
-            aux3->proximo = aux2->proximo->proximo;
-            aux2->proximo->proximo = aux2->proximo;
-            aux2->proximo = aux3;
-            position = position - 1;
-        }
-        aux2->proximo = listaAluno_Pega(pListaAluno, i+1);
-        aux2->proximo = aux->proximo;
+void listaAluno_InsertionSort(ListaAluno *pListaAluno) {
+    int sizeVector = listaAluno_Tamanho(pListaAluno);
+    ListaAlunoNo *aux = pListaAluno->primeiro;
+    //olacando listaAluno e atribuindo os valores da fila;
+    ListaLuno *lista = malloc(sizeVector * sizeof(ListaLuno));
+    for (int i = 0; i < sizeVector; ++i) {
+        lista[i].matricula = aux->matricula;
+        lista[i].prova = aux->prova;
+        lista[i].trabalho = aux->trabalho;
+        lista[i].media = aux->media;
+        aux = aux->proximo;
     }
+
+    int j;
+    for (int i = 1; i <= sizeVector - 1; i++) {
+        ListaLuno aux = lista[i];
+        j = i - 1;
+        while (j >= 0 && aux.media < lista[j].media) {
+            lista[j + 1] = lista[j];
+            j--;
+        }
+        lista[j + 1] = aux;
+    }
+
+    for (int i = 0; i < sizeVector; ++i) {
+        printf("%d  %f", lista[i].matricula, lista[i].media);
+        printf("\n");
+    }
+}                                   //INICIO VETOR ESQUERDA E INICIO VETOR A DIREITA
+void mergeSort(ListaLuno *aluno, int iVE, int iVD) {
+    //meio vetor
+    int mV;
+    if (iVE < iVD) {
+        mV = (iVE + iVD) / 2;
+        mergeSort(aluno, iVE, mV);
+        mergeSort(aluno, mV + 1, iVD);
+        merge(aluno, iVE, mV, iVD);
+    }
+
 }
 
-void listaAluno_MergeSort(ListaAluno *pListaAluno){
+void merge(ListaLuno *aluno, int iVE, int mV, int iVD) {
+    int i, j;
+    //tamanho vetor a esquerda e tamanho do vetor a direita
+    int tVE = (mV - iVE + 1);
+    int tVD = (iVD - mV);
+    //vetor a esquerda e vetor a direita
+    ListaLuno *vE = malloc(tVE * sizeof(ListaLuno));
+    ListaLuno *vD = malloc(tVD * sizeof(ListaLuno));
+    for (i = 0; i < tVE; i++) {
+        vE[i] = aluno[i + iVE];
+    }
+    for (j = 0; j < tVD; j++) {
+        vD[j] = aluno[mV + j + 1];
+    }
+    i = 0;
+    j = 0;
+    for (int k = 0; k <= iVD; k++) {
+        if (i == tVE) {
+            aluno[k] = vD[j++];
+        } else if (j == tVD) {
+            aluno[k] = vE[i++];
+        } else if (vE[i].media >= vD[j].media) {
+            aluno[k] = vE[i++];
+        } else {
+            aluno[k] = vD[j++];
+        }
+    }
+    free(vE);
+    free(vD);
+}
+void converter(ListaAluno *listaAluno,ListaLuno *aluno){
+    //convertendo lista encadeada para lista de struckt
+    int sizeVector = listaAluno_Tamanho(listaAluno);
+    ListaAlunoNo *aux = listaAluno->primeiro;
 
+    for (int i = 0; i < sizeVector; i++) {
+        aluno[i].matricula = aux->matricula;
+        aluno[i].prova = aux->prova;
+        aluno[i].trabalho = aux->trabalho;
+        aluno[i].media = aux->media;
+        aux = aux->proximo;
+    }
+}
+void callMerge(ListaAluno *listaAluno){
+    int size = listaAluno_Tamanho(listaAluno);
+    ListaLuno *aluno = malloc(size * sizeof(ListaLuno));
+    converter(listaAluno,aluno);
+    mergeSort(aluno, 0, (size -1));
+    for (int i = 0; i < size; ++i) {
+        printf("%d %f\n", aluno[i].matricula, aluno[i].media);
+        printf("\n");
+    }
+    free(aluno);
 }
